@@ -1,0 +1,41 @@
+composer create-project --prefer-dist laravel/laravel todolist
+cd todolist
+php artisan serve
+
+
+/*Open new termenal*/
+php artisan make:model Item -m
+/*create model and migration*/
+
+
+php artisan migrate
+
+/*Create own controller */
+php artisan make:controller ItemController --resource
+
+
+
+/*Post man application*/
+header**
+Content-Type application/json
+body**
+row*
+{
+	"item": {
+		"name": "Take out the trash" 	
+	}
+
+}
+
+/*create vue js*/
+
+npm install /*install package independences*/
+npm install vue
+
+
+install vue plugin
+
+/* recompile assets and also the mix in webpack*/
+npm run hot
+
+/* search vue font awesome icon */
