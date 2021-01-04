@@ -1,0 +1,11 @@
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+/*Jet Stream for user login and authentication system*/
+composer require laravel/jetstream
+
+/*update the platform of the composer*/
+composer config platform.php 7.4.3
+
+php artisan jetstream:install inertia
+
