@@ -1,11 +1,11 @@
 <template>
     <div> 
-        <div v-for="{item, index} in items" :key="index" > 
+        <div v-for="(item, index) in items" :key="index" > 
     
             <list-item 
                 :item="item"
                 class="item" 
-                v-on:itemchanged="$emit('reloadlist')"
+                v-on:itemchanged="$emit('reloadList')"
             />  
         </div>
     </div>

@@ -3,12 +3,12 @@
         <div class="heading">
             <h2 id="title">Todo "List</h2>
             <add-item-form 
-                v-on:reloadlist="getList()"
+                v-on:reloadList="getList()"
             />
         </div>
         <list-view 
             :items="items"
-            v-on:reloadlist="getList()"
+            v-on:reloadList="getList()"
             /> 
     </div>
 </template>
